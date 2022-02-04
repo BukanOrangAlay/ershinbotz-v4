@@ -12,7 +12,7 @@
   },
   "author": "Ramdani Official",
   "dependencies": {
-  "@adiwajshing/baileys": "github:adiwajshing/baileys",
+  "@adiwajshing/baileys": "^3.5.3",
     "axios": "^0.21.1",
     "brainly-scraper": "^1.0.3",
     "chalk": "^4.1.1",
