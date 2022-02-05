@@ -1,24 +1,11 @@
 <p align="center">
 
-<img src="https://l.top4top.io/p_22225gd9e0.jpg" alt="ZAKY BOT" width="200"/>
-
-<p align="center">
-
-    <a href="https://Lexxy24.github.io">
-
-        <img
-
-            src="https://readme-typing-svg.herokuapp.com?size=15&width=280&lines=Created+By+Zaky+Ganz+♨️"
-
-            alt="Zaky Official"
-
-        />
-
-    </a>
+<img src="https://raw.githubusercontent.com/p3mu14-ui/v3/main/media/Ramdani3.jpg" alt="ErshinBotz" width="200"/>
 
 </p>
 
-# BOTV10
+# ERSHINBOTZV3
+hapus file ErshinBotz.json 
 
 ## Heroku Buildpack
 
@@ -36,8 +23,6 @@
 
 ```bash
 
-> pkg install bash
-
 > pkg install nodejs
 
 > pkg install libwebp
@@ -52,47 +37,43 @@
 
 > cd /sdcard/(nama file)
 
-> git clone (link github)
+> git clone https://github.com/p3mu14-ui/v3.git
 
-> cd (nama file)
+> cd v3
 
 > git clone https://github.com/Lexxy24/node_modules
 
+> npm install
+
 > npm start
+
 
 ```
 
 ## settings
 
-Edit Nomor Owner DLL `'./settings/setting.json'`
+Edit Nomor Owner DLL `'./setting.json'`
 
 ```ts
 
 {
 
-"BotName":"ZakyBotz",
+"BotName":"ErshinBotz",
 
-"OwnerNumber":"62858779027560",
+"OwnerNumber":"6289627655877",
 
-"OwnerName":"Zaky",
+"OwnerName":"Arif",
 
-"GithubOwner":"https://github.com/Zakybotz",
+"GithubOwner":"https://github.com/p3mu14-ui",
 
 "YoutubeOwner":"-",
 
-"GroupOwner":"https://chat.whatsapp.com/CzLzQuCfc9zDnaJcYJQAhm"
 
 }
 
 ```
 
-# My Sosial
 
-- [Group ](https://chat.whatsapp.com/CzLzQuCfc9zDnaJcYJQAhm)
-
-- [Tik Tok ](-)
-
-- [Whatsapp ](https://wa.me/62858779027560)
 
 # Thanks To
 
@@ -101,3 +82,10 @@ Edit Nomor Owner DLL `'./settings/setting.json'`
 * [`Baileys`](https://github.com/adiwajshing/Baileys)
 
 * [`Lexxy24`](https://github.com/Lexxy24)
+
+* [`Ramdani`](https://youtube.com/channel/UCB157jomCne961WzYHpG4gg)
+
+
+
+
+
