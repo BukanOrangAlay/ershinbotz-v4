@@ -1336,7 +1336,8 @@ Ramdani.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
 │❏ヅ ${prefix}babi
 │❏ヅ ${prefix}cekganteng
 │❏ヅ ${prefix}cekcantik
-└⬣
+└⬣`
+
  buttons = [{buttonId: `${prefix}donasi`,buttonText:{displayText: 'ᴅᴏɴᴀsɪ'},type:1},{buttonId: `${prefix}owner`,buttonText:{displayText: 'ᴏᴡɴᴇʀ'},type:1}]
 
                imageMsg = (await Ramdani.prepareMessageMedia(fs.readFileSync(`./media/Ramdani3.jpg`), 'imageMessage', {thumbnail: fs.readFileSync(`./media/Ramdani3.jpg`)})).imageMessage
