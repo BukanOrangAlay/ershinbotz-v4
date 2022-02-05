@@ -4944,8 +4944,12 @@ case 'quotesdilan':
 
 //---------------<batasan atas dan bawah ni>-----
 case 'desah':
-             desah = fs.readFileSync('./media/desahan1.mp3');
+             desah = fs.readFileSync('./media/desahan.mp3');
              Ramdani.sendMessage(from, desah, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+             break
+case 'desah1':
+             desahsatu = fs.readFileSync('./media/desahan1.mp3');
+             Ramdani.sendMessage(from, desahsatu, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
              break
              case 'sound1':
 satu = fs.readFileSync('./media/sound1.mp3');
