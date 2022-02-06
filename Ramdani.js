@@ -2822,7 +2822,7 @@ Judul : ${anu.result.title}
 *[Wait] Tunggu Sebentar..*`
 				///////buffer = await getBuffer(anu.result.thumbnail)
 				buffer1 = await getBuffer(anu.result.url)
-				buffer2 = fs.readFileSync(`${anu.result.url}.mp4`);
+				buffer2 = fs.readFileSync(`${anu.result.url}.mp3`);
              Ramdani.sendMessage(from, buffer2, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
              break  
 				case 'play':
