@@ -4,7 +4,7 @@
 
 </p>
 
-# ERSHINBOTZV3
+# ERSHINBOTZ-V4
 hapus file ErshinBotz.json 
 
 ## Heroku Buildpack
