@@ -1,4 +1,4 @@
-k
+
 const {
     WAConnection,
 	MessageType,
