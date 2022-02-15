@@ -56,19 +56,22 @@ Edit Nomor Owner DLL `'./setting.json'`
 ```ts
 
 {
-
-"BotName":"ErshinBotz",
-
-"OwnerNumber":"6289627655877",
-
-"OwnerName":"Arif",
-
-"GithubOwner":"https://github.com/p3mu14-ui",
-
-"YoutubeOwner":"-",
-
-
+  "ownerNumber": "6289627655877@s.whatsapp.net",
+  "sessionName": "ErshinBotz",
+  "ownerName": "P3mu14",
+  "banChats": false,
+  "gamewaktu": 60,
+  "owner": "6289627655877",
+  "botName": "ErshinBotz",
+  "lolkey": "ddef75de5f3c4df3a211b8e3",
+  "vhtearkey": "FauzanBotz",
+  "zekskey": "NinoWangy",
+  "xteamkey": "kurrxd09",
+  "gcount": 20
 }
+
+
+
 
 ```
 
