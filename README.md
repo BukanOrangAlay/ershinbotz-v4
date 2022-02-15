@@ -5,7 +5,7 @@
 </p>
 
 # ERSHINBOTZ-V4
-hapus file ErshinBotz.json 
+buat yang pertamainstall silakan hapus file ```ErshinBotz.json ``` 
 
 ## Heroku Buildpack
 
@@ -41,8 +41,7 @@ hapus file ErshinBotz.json
 
 > cd v3
 
-> git clone https://github.com/Lexxy24/node_modules
-
+> git clone https://github.com/p3mu14-ui/node_modules
 > npm install
 
 > npm start
