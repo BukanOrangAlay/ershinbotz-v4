@@ -2802,7 +2802,7 @@ Judul : ${anu.title}
 *[Wait] Tunggu Sebentar..*`
 				///////buffer = await getBuffer(anu.result.thumbnail)
 				buffer1 = await getBuffer(`anu.url`)
-				Arif.sendMessage(from, buffer1, video, {mimetype: 'video/mp4', filename: `${anu.result.url}.mp4`, quoted:freply, caption: 'Nih Gan'})
+				Arif.sendMessage(from, buffer1, video, {mimetype: 'video/mp4', filename: `${anu.url}.mp4`, quoted:freply, caption: 'Nih Gan'})
 					break  
 					case 'playy':   
 				  if (args.length < 1) return reply('*Masukan judul nya ngab;?*')
@@ -2817,7 +2817,7 @@ Judul : ${anu.title}
 *[Wait] Tunggu Sebentar..*`
 				///////buffer = await getBuffer(anu.result.thumbnail)
 				buffer1 = await getBuffer(`anu.url`)
-				buffer2 = fs.readFileSync(`${anu.url}.mp3`);
+				////buffer2 = fs.readFileSync(`${anu.url}.mp3`);
              Arif.sendMessage(from, buffer1, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
              break  
 				case 'play':
