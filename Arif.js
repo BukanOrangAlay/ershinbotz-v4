@@ -2816,7 +2816,7 @@ Judul : ${anu.title}
 				
 *[Wait] Tunggu Sebentar..*`
 				///////buffer = await getBuffer(anu.result.thumbnail)
-				buffer1 = await getBuffer(`anu.url`)
+				buffer1 = await getBuffer(anu.url)
 				////buffer2 = fs.readFileSync(`${anu.url}.mp3`);
              Arif.sendMessage(from, buffer1, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
              break  
