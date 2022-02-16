@@ -1,4 +1,6 @@
-
+//subrek chanel nya ramdani ofc ya kawan
+//thanks to ramdani ofc , 
+// saya hanya memodifikasi sc dari ramdani ofc
 //update semua fitur yang ada di rest api lolhuman di ganti ke rest api lain dengan fitur yang sama dan fitur yang pake api lolhuman di premiumkan karna gratisan wokwowkwoekekkekek
 // Modifed by p3mu14-ui
 //update asupan new
@@ -47,6 +49,7 @@ const timeWib = moment.tz('Asia/Jakarta').format('DD/MM')
 // stickwm
 const Exif = require('./lib/exif');
 const exif = new Exif();
+
 const { allMenu, downloadMenu, infoMenu, gameMenu, groupMenu, funMenu, wibuMenu, ownerMenu, stickerMenu, otherMenu, rulesBot, islamMenu, sertiMenu, ceritaMenu, makerMenu,sholawatMenu, toolsMenu} = require('./message/help.js')
 const { getBuffer, getGroupAdmins, getRandom, runtime, sleep } = require('./lib/myfunc')
 const { fetchJson, getBase64, kyun, createExif } = require('./lib/fetch')
@@ -82,6 +85,7 @@ let audionye = JSON.parse(fs.readFileSync('./temp/vn.json'))
 let fakeimage = fs.readFileSync("./media/Arif2.jpg")
 let errorImg = 'https://i.ibb.co/FBm52Pt/1e0fe6a08b67.jpg'
 let setting = JSON.parse(fs.readFileSync('./setting.json'))
+
 owner = setting.owner
 gamewaktu = setting.gamewaktu
 petik = '```'
@@ -90,6 +94,7 @@ batre = 'tidak terdeteksi'
 api = 'Arif Official'
 github = 'p3mu14-ui'
 ban =[]
+
 // Database
 let register = JSON.parse(fs.readFileSync('./database/user/register.json'))
 let welkom = JSON.parse(fs.readFileSync('./database/group/welcome.json'))
@@ -104,6 +109,7 @@ let mute = JSON.parse(fs.readFileSync('./database/group/mute.json'));
 let _update = JSON.parse(fs.readFileSync('./database/bot/update.json'))
 let sewa = JSON.parse(fs.readFileSync('./database/group/sewa.json'));
 let _scommand = JSON.parse(fs.readFileSync('./database/bot/scommand.json'))
+
 // GAME
 let tebakanime = JSON.parse(fs.readFileSync('./database/tebakanime.json'))
 let tebakgambar = JSON.parse(fs.readFileSync('./database/tebakgambar.json'))
@@ -838,8 +844,8 @@ headerType: 4
 }
 Arif.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
 }
-//ೋ❀❀ೋ═══[SUBSCRIBE RAMDANI OFFICIAL]═══ೋ❀❀ೋ//
-//ೋ❀❀ೋ═══[SUBSCRIBE RAMDANI OFFICIAL]═══ೋ❀❀ೋ//
+
+
         case 'menu':
         case 'help':
         case 'm':
@@ -1462,9 +1468,9 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
               if (tebaktebakan.hasOwnProperty(sender.split('@')[0])) return reply("Masih ada soal yg belum terjawab")
               get_result = await fetchJson(`https://restapi-1-production.up.railway.app/api/game/tebaktebakan?apikey=APIKEY`, {method: 'get'})
               
-              jawaban = get_result.result.jawaban
+              jawaban = get_result.jawaban
               kisi_kisi = jawaban.replace(/[b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|t|v|w|x|y|z]/gi, '_')
-              pertanyaan = get_result.result.soal
+              pertanyaan = get_result.soal
               Arif.sendMessage(from, '*+* ```Tebak Tebakan```\n\n• *soal* :'+pertanyaan+'\n• *kisi²* :'+kisi_kisi, text, { quoted: mek}).then(() => {
               tebaktebakan[sender.split('@')[0]] = jawaban.toLowerCase()
               fs.writeFileSync("./database/tebaktebakan.json", JSON.stringify(tebaktebakan))
@@ -3498,12 +3504,24 @@ break
 }
                break      
 //------------------<18+ Menu>-----------------------   
-       case 'randombokep':
+       case 'randombokep2':
               bokep = body.slice(1)
               const bo =['https://www.mediafire.com/download/8hnhjcf3pseubgy','https://www.mediafire.com/download/cty9phda3d1s62u','https://www.mediafire.com/download/8hnhjcf3pseubgy']
               const kep = bo[Math.floor(Math.random() * bo.length)]
               Arif.sendMessage(from, '*PERMINTAAN:* '+bokep+'\n*DOSA TANGGUNG PRIBADI*\n*NI BRO FREE BUAT KAMU DOWNLOAD SENDIRI:* '+ kep, text, { quoted: ftoko, caption: `NI BOKEP SAYA DAPAT DARI *© ᴄʀᴇᴀᴛᴏʀ ʙʏ ʀᴀᴍᴅᴀɴɪ ᴏғғɪᴄɪᴀʟ⸙* DOSA TANGGUNG SENDIRI🗿`})
               break
+case 'randombokep':
+if (!isPremier)return reply(mess.premier)
+if (isBanned)return sticBanned(from)
+data = fs.readFileSync('./lib/18+.js');
+jsonData = JSON.parse(data);
+randIndex = Math.floor(Math.random() * jsonData.length);
+randKey = jsonData[randIndex];
+randBokep = await getBuffer(randKey.image)
+reply(mess.wait)
+randTeks = randKey.teks
+Lexxy.sendMessage(from, randBokep, image, {quoted: mek, caption: randTeks})
+break
                 case 'xnxx':
 if (!isPremium) return reply(mess.only.premium)
                     if (args.length == 0) return reply(`Contoh: ${prefix + command} https://www.xnxx.com/video-uy5a73b/mom_is_horny_-_brooklyn`)
@@ -3528,7 +3546,6 @@ if (!isPremium) return reply(mess.only.premium)
                     Arif.sendMessage(from, thumbnail, image, { quoted: mek, caption: ini_txt })
                     break
         case 'xnxxsearch':
-if (!isPremium) return reply(mess.only.premium)
                     if (args.length == 0) return reply(`Example: ${prefix + command} Japanese`)
                     query = args.join(" ")
                     get_result = await fetchJson(`https://api.lolhuman.xyz/api/xnxxsearch?apikey=genbotkey&query=${query}`)
@@ -3536,11 +3553,9 @@ if (!isPremium) return reply(mess.only.premium)
                     ini_txt = ""
                     for (var x of get_result) {
                         ini_txt += `Title : ${x.title}\n`
-                        ini_txt += `Views : ${x.views}\n`
-                        ini_txt += `Duration : ${x.duration}\n`
-                        ini_txt += `Uploader : ${x.uploader}\n`
+                        ini_txt += `info : ${x.info}\n`
                         ini_txt += `Link : ${x.link}\n`
-                        ini_txt += `Thumbnail : ${x.thumbnail}\n\n`
+                        i
                     }
                     reply(ini_txt)
                     break 
@@ -4760,6 +4775,17 @@ if (!isPremium) return reply(`Kamu bukan user premium, kirim perintah *${prefix}
 				zhain = await getBuffer(`https://api.lolhuman.xyz/api/toloserti?apikey=${setting.lolkey}&name=${ct}`)
 				Arif.sendMessage(from, zhain, image, { quoted: mek, caption: 'Nih Dah Jadi' })
 				break
+
+//------------------< New menu cord >-------------------   
+ case 'cord':
+              if (args.length < 1) return reply(`judul lagu nya ngab \n Contoh : ${prefix}cord 2002`) 
+              query = args.join(" ")
+              anu = await fetchJson(`https://dt-04.herokuapp.com/api/chord?q=${query}`)
+             if (anu.error) return reply(anu.error)
+             reply(anu.result)
+
+
+break
 //------------------< cerita menu >-------------------
 case 'cerpen2':
 	if (!isPremium) return reply(`Kamu bukan user premium, kirim perintah *${prefix}buypremium* untuk membeli premium , kalo owner lagi baik maybe free`)
@@ -4793,7 +4819,15 @@ if (!isPremium) return reply(`Kamu bukan user premium, kirim perintah *${prefix}
                     Arif.sendMessage(from, thumbnail, image, { quoted: mek, caption: ini_txt })
                      break 
 //------------------(KATA KATA MENU)---------+--------
-     case 'quotes2':
+    case 'quotes':
+            
+                    quotes = await fetchJson(`https://dt-04.herokuapp.com/api/randomquotes`)
+                    author = quotes.author
+                    quotes = quotes.quotes
+                    reply(`_${quotes}_\n\n*― ${author}*`)
+                    break
+     
+       case 'quotes2':
 if (!isPremium) return reply(`Kamu bukan user premium, kirim perintah *${prefix}buypremium* untuk membeli premium , kalo owner lagi baik maybe free`)
               
                     quotes = await fetchJson(`https://api.lolhuman.xyz/api/random/quotes?apikey=${setting.lolkey}`)
@@ -5634,32 +5668,32 @@ reply(e)
 
 if (!isGroupAdmins) return
 
-if (budy.includes(`bot`)) {          
-            reply (`iya min ada apa ?`)
+               if (budy.includes(`bot`)) {          
+                    reply (`iya min ada apa ?`)
                 }
                 if (budy.includes(`Bot`)) {          
-            reply (`iya min ada apa`)
+                    reply (`iya min ada apa`)
                 }
 
 	
 if (!isGroup) return
 
-if (budy.includes(`assalamualaikum`)) {
+        if (budy.includes(`assalamualaikum`)) {
 
                   assalamualaikum = fs.readFileSync('./media/salam.mp3');
-             Arif.sendMessage(from, assalamualaikum, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+                  Arif.sendMessage(from, assalamualaikum, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 
-                  }
-if (budy.includes(`ara`)) {
+              }
+         if (budy.includes(`ara`)) {
 
                   ara = fs.readFileSync('./media/ara2.mp3');
-             Arif.sendMessage(from, ara, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+                  Arif.sendMessage(from, ara, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 
-                  }
-if (budy.includes(`Assalamualaikum`)) {
+                }
+         if (budy.includes(`Assalamualaikum`)) {
 
                   assalamualaikum = fs.readFileSync('./media/salam.mp3');
-             Arif.sendMessage(from, assalamualaikum, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+                  Arif.sendMessage(from, assalamualaikum, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 
                   }
                   
