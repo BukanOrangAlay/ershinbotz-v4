@@ -1,6 +1,4 @@
-//subrek chanel nya ramdani ofc ya kawan
-//thanks to ramdani ofc , 
-// saya hanya memodifikasi sc dari ramdani ofc
+
 //update semua fitur yang ada di rest api lolhuman di ganti ke rest api lain dengan fitur yang sama dan fitur yang pake api lolhuman di premiumkan karna gratisan wokwowkwoekekkekek
 // Modifed by p3mu14-ui
 //update asupan new
@@ -45,11 +43,10 @@ const { virtex, vipi } = require('./lib/virtex.js')
 const Mfake = fs.readFileSync ('./media/Arif2.jpg')
 const Mthumb = fs.readFileSync('./media/Arif2.jpg')
 const timeWib = moment.tz('Asia/Jakarta').format('DD/MM')
-//ೋ❀❀ೋ═══[SUBSCRIBE RAMDANI OFFICIAL]═══ೋ❀❀ೋ//
+
 // stickwm
 const Exif = require('./lib/exif');
 const exif = new Exif();
-//ೋ❀❀ೋ═══[SUBSCRIBE RAMDANI OFFICIAL]═══ೋ❀❀ೋ//
 const { allMenu, downloadMenu, infoMenu, gameMenu, groupMenu, funMenu, wibuMenu, ownerMenu, stickerMenu, otherMenu, rulesBot, islamMenu, sertiMenu, ceritaMenu, makerMenu,sholawatMenu, toolsMenu} = require('./message/help.js')
 const { getBuffer, getGroupAdmins, getRandom, runtime, sleep } = require('./lib/myfunc')
 const { fetchJson, getBase64, kyun, createExif } = require('./lib/fetch')
@@ -85,7 +82,6 @@ let audionye = JSON.parse(fs.readFileSync('./temp/vn.json'))
 let fakeimage = fs.readFileSync("./media/Arif2.jpg")
 let errorImg = 'https://i.ibb.co/FBm52Pt/1e0fe6a08b67.jpg'
 let setting = JSON.parse(fs.readFileSync('./setting.json'))
-//ೋ❀❀ೋ═══[SUBSCRIBE RAMDANI OFFICIAL]═══ೋ❀❀ೋ//
 owner = setting.owner
 gamewaktu = setting.gamewaktu
 petik = '```'
@@ -94,7 +90,6 @@ batre = 'tidak terdeteksi'
 api = 'Arif Official'
 github = 'p3mu14-ui'
 ban =[]
-//ೋ❀❀ೋ═══[SUBSCRIBE RAMDANI OFFICIAL]═══ೋ❀❀ೋ//
 // Database
 let register = JSON.parse(fs.readFileSync('./database/user/register.json'))
 let welkom = JSON.parse(fs.readFileSync('./database/group/welcome.json'))
@@ -109,7 +104,6 @@ let mute = JSON.parse(fs.readFileSync('./database/group/mute.json'));
 let _update = JSON.parse(fs.readFileSync('./database/bot/update.json'))
 let sewa = JSON.parse(fs.readFileSync('./database/group/sewa.json'));
 let _scommand = JSON.parse(fs.readFileSync('./database/bot/scommand.json'))
-//ೋ❀❀ೋ═══[SUBSCRIBE RAMDANI OFFICIAL]═══ೋ❀❀ೋ//
 // GAME
 let tebakanime = JSON.parse(fs.readFileSync('./database/tebakanime.json'))
 let tebakgambar = JSON.parse(fs.readFileSync('./database/tebakgambar.json'))
