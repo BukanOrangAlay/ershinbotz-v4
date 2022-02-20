@@ -37,11 +37,11 @@ buat yang pertamainstall silakan hapus file ```ErshinBotz.json ```
 
 > cd /sdcard/(nama file)
 
-> git clone https://github.com/p3mu14-ui/ershinbotz-v4.git
+> git clone https://github.com/BukanOrangAlay/ershinbotz-v4.git
 
 > cd ershinbotz-v4
 
-> git clone https://github.com/p3mu14-ui/node_modules
+> git clone https://github.com/BukanOrangAlay/node_modules
 > npm install
 
 > npm start
