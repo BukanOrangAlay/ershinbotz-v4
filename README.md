@@ -1,6 +1,6 @@
 <p align="center">
 
-<img src="https://raw.githubusercontent.com/p3mu14-ui/v3/main/media/Ramdani3.jpg" alt="ErshinBotz" width="200"/>
+<img src="https://raw.githubusercontent.com/p3mu14-ui/ershinbotz-v4/main/media/Arif3.jpg" alt="ErshinBotz" width="200"/>
 
 </p>
 
@@ -37,9 +37,9 @@ buat yang pertamainstall silakan hapus file ```ErshinBotz.json ```
 
 > cd /sdcard/(nama file)
 
-> git clone https://github.com/p3mu14-ui/v3.git
+> git clone https://github.com/p3mu14-ui/ershinbotz-v4.git
 
-> cd v3
+> cd ershinbotz-v4
 
 > git clone https://github.com/p3mu14-ui/node_modules
 > npm install
