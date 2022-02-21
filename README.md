@@ -5,7 +5,7 @@
 </p>
 
 # ERSHINBOTZ-V4
-buat yang pertamainstall silakan hapus file ```ErshinBotz.json ``` 
+
 
 ## Heroku Buildpack
 
