@@ -1,8 +1,7 @@
-//subrek chanel nya ramdani ofc ya kawan
-//thanks to ramdani ofc , 
-// saya hanya memodifikasi sc dari ramdani ofc
-//update semua fitur yang ada di rest api lolhuman di ganti ke rest api lain dengan fitur yang sama dan fitur yang pake api lolhuman di premiumkan karna gratisan wokwowkwoekekkekek
-// Modifed by p3mu14-ui
+
+
+
+//update semua fitur yang ada di rest api lolhuman di ganti ke rest api lain dengan fitur yang sama dan fitur yang pake api lolhuman di premiumkan karna gratisan wokwowkwoekekkeke
 //update asupan new
 const {
     WAConnection,
